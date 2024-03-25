@@ -182,7 +182,6 @@ const TransformationForm = ({
     return onChangeField(value);
   };
 
-  //TODO
   const onTransformHandler = async () => {
     setIsTransforming(true);
     setTransformationConfig(
@@ -225,6 +224,7 @@ const TransformationForm = ({
                 onValueChange={(value: any) =>
                   onSelectFieldHandler(value, field.onChange)
                 }
+                value={field.value}
               >
                 <SelectTrigger className="select-field">
                   <SelectValue placeholder="Select size" />
